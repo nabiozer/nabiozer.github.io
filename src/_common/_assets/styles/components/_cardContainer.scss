@@ -1,0 +1,20 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    width: 100vw;
+    height:400px;
+    background: $c1;
+    
+}
+.information-cardcontainer {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.card-container__header {
+   
+        background:$c1;
+        padding: 2rem;
+
+}

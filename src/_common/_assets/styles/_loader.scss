@@ -1,0 +1,23 @@
+@ tick { to {transform :rotate(359deg); }}
+
+.loader {
+    position: relative;
+    width:128px;
+    height:128px;
+    border-radius:50%;
+    border:2px solid $c4;
+    margin: 7rem auto;
+}
+
+.loader::after {
+    content:"";
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    display: block;
+    transform-origin: 0% 100%;
+    width: 1px;
+    height: 48px;
+    background-color: $c5;
+    animation: tick 2s infinite linear;
+}

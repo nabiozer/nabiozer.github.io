@@ -1,0 +1,26 @@
+.center-colflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.center-rowflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.fullscreen {
+    height: calc(100vh - 4rem) !important;
+    width: 100vw !important; 
+}
+
+
+
+@media (min-width: 768px) {
+    .fullscreen {
+        height: calc(100vh - 4.5rem) !important;
+        width: 100vw !important;
+    }
+  }

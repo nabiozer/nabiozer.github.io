@@ -1,0 +1,150 @@
+@mixin input-size-style(
+    $labelFontSize: 1rem,
+    $labelTransform: 11px,
+    $inputHeight:4.8rem,
+    $inputFontSize:1rem,
+    $paddingTop:1.2rem,
+)
+
+{
+    label {
+
+        transform: translate(14px,11px) scale(1);
+        font-size:$labelFontSize;
+        &.Mui-focused,
+        &.MuiInputLabel-shrink {
+            font-size:1rem;
+            transform: translate(14px,-9px) scale(1);
+        }
+        &:not(.Mui-focused):not(.MuiInputLabel-shrink) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width:calc(100% - 40px);
+        }
+
+    }
+    .MuiInputBase-formControl {
+        .MuiInputBase-input {
+            height:$inputHeight;
+            font-size:$inputFontSize;
+            padding: 0 14px !important;
+            padding-top: 18px!important;
+            box-sizing: border-box;
+        }
+        input {
+            height: $inputHeight;
+            font-size: $inputFontSize;  
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            
+        }
+
+        textarea {
+            height: auto !important;
+        }
+    }
+}
+.custom-outlined-input {
+    margin:1rem;
+    outline:none;
+    label {
+        color:$c6;
+        &:not(.Mui-error) {
+            &.Mui-focused{
+                color:$c2;
+            }
+        }
+    }
+    &.custom-date-input {
+        .MuiIconButton-edgeEnd {
+        width:3rem;
+        height:3rem;
+        margin-right: 0;
+        span {
+            i {
+                font-size:1rem;
+            }
+        } }
+    }
+
+    &.small {
+        @include input-size-style(14px,13px,36px,14px,13px);
+
+        &.custom-date-input {
+            .MuiIconButton-edgeEnd {
+            span {
+                i {
+                    font-size:1rem;
+                }
+            } }
+        }
+    }
+    &.medium {
+        @include input-size-style(14px,13px,36px,14px,13px);
+
+        &.custom-date-input {
+            .MuiIconButton-edgeEnd {
+            span {
+                i {
+                    font-size:1.05rem;
+                }
+            } }
+        }
+    }
+    &.large {
+        @include input-size-style(14px,13px,36px,14px,13px);
+
+        &.custom-date-input {
+            .MuiIconButton-edgeEnd {
+            span {
+                i {
+                    font-size:1.1rem;
+                }
+            } }
+        }
+    }
+    &.xlarge {
+        @include input-size-style(14px,13px,36px,14px,13px);
+
+        &.custom-date-input {
+            .MuiIconButton-edgeEnd {
+            span {
+                i {
+                    font-size:1.15rem;
+                }
+            } }
+        }
+    }
+    .MuiInputBase-root {
+        padding:0 !important;
+        .MuiInputAdornment-positionStart {
+            left:0;
+            margin-left :14px;
+            margin-right: 0 !important;
+            p{
+                line-height: 1;
+            }
+        }
+        .MuiInputAdornment-positionEnd {
+            left:0;
+            margin-right :14px;
+            margin-left: 0 !important;
+            p{
+                line-height: 1;
+            }
+        }
+        fieldset {
+            border-color: $c2;
+        }
+        &:not(.Mui-error) {
+            &.Mui-focused,
+            &:hover {
+                fieldset {
+                    border-color:$c2;
+                }
+            }
+        }
+
+    }
+}

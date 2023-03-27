@@ -1,0 +1,27 @@
+.projectchart-container {
+    display:flex;
+    background:$c2;
+}
+.projectchart-data {
+    width: 100%;
+    margin: 0 auto;
+    padding :1rem;
+
+   
+    
+    .projectchart-data__header {
+
+        width: 100%;
+        padding:1rem;
+        display:flex;
+        justify-content:space-between;
+        background: $c1;
+        margin: 0 auto;
+
+    }
+
+    .projectchart-data__chartcontainer {
+        border: 2px solid $c1;
+
+    }
+}

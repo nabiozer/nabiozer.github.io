@@ -1,0 +1,26 @@
+.page-data-empty {
+    height:25rem;
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:6px;
+    border:1px solid $c1;
+    background-color:$c2;
+   color:$c6;
+    i{
+        font-size: 4rem;
+        color:$c4
+    }
+
+    .no-data-text {
+        font-size:4.6rem !important;
+        line-height:1.2;
+        margin: 25px 0 0;
+        font-weight:lighter;
+        letter-spacing:1px;
+        text-align: center;
+        padding: 0 4.2rem;
+    }
+}

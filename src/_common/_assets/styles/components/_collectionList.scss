@@ -1,0 +1,94 @@
+.collection-container {
+    border: 0.0625rem solid rgba(117, 121, 128, 0.314);
+    padding:0.9rem;
+    margin:0.5rem 0.5rem;
+    border-radius:0.5rem;
+    font-size:1.4rem;
+}
+.collection-firstrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:1.4rem !important;
+    
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        margin:0 1rem;
+    }
+}
+
+.collection-secondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+  
+    padding:1rem;
+    p{
+        font-size:1.2rem !important;
+    }
+    h6 {
+        font-size:1.2rem !important;
+    }
+
+}
+
+.collection-price__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p{
+        margin: 0;
+        font-weight: 400;
+    font-size: 0.96rem;
+    line-height: 1.1rem;
+    color: rgb(117, 121, 128);
+    }
+    .collection-price {
+        display: flex;
+        flex-direction: row;
+  
+        
+        h6{
+            margin: 0;
+            margin-left: 0.5rem;
+        font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    
+        }
+
+    }
+}
+.custom-mui-tab {
+    padding: 2rem;
+    .MuiTabs-indicator {
+        color:white !important;
+        background-color: white !important;
+    }
+    .MuiTabs-scrollButtons {
+        color:white !important;
+        background-color: white !important;
+    }
+    .MuiTabs-scroller {
+        color:white !important;
+       
+    }
+    .MuiTabs-textColorPrimary {
+        color:white !important;
+       
+    }
+    button {
+        color:rgb(117, 121, 128);
+    }
+    .Mui-selected {
+        color:white !important;
+    }
+ 
+}
+

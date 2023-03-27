@@ -1,0 +1,150 @@
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+.skills{
+
+    color:white;
+    width:100%;
+    padding:2rem;
+
+ 
+    
+
+  }
+   .skills li {
+     margin: 20px 0;
+     list-style-type: none;
+     h5 {
+        font-size: 1rem;
+     }
+
+ } 
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border:1px solid rgba(0,0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+
+
+.html {
+    height: 2px;
+    float: left;
+    background: $c2;
+    width: 90%;
+    animation: html 5s;
+    
+}
+
+.css {
+    height: 2px;
+    float: left;
+    background: $c3;
+    width: 75%;
+    animation: css 5s;
+    
+}
+
+
+.javascript {
+    height: 2px;
+    float: left;
+    background: $c5;
+    width: 86%;
+    animation: javascript 5s;
+    
+}
+
+
+.react {
+    height: 2px;
+    float: left;
+    background: $c3;
+    width: 90%;
+    animation: react 5s;
+}
+.node {
+    height: 2px;
+    float: left;
+    background: $c2;
+    width: 65%;
+    animation: node 5s;
+}
+
+
+@keyframes html {
+    
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 86%;
+    }
+}
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes node {
+    
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width : 640px){
+    .skills{
+            
+        width: 100%;
+        
+    
+      }
+  }
+
+  .table {
+    width: 60%;
+    margin:0 auto 0 10px;
+    text-align: center;
+    
+}
+

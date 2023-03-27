@@ -1,0 +1,57 @@
+.custom-modal-mui-dialog {
+    outline:none;
+
+    .MuiPaper-rounded {
+        border-radius: 2px;
+    }
+
+    .custom-modal-close {
+        position: absolute;
+        right: 0;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        i{
+            font-size: 1.5rem;
+            line-height: 1.2em;
+            color:$c2;
+        }
+
+        &:hover {
+            i {
+                color:$c5;
+            }
+        }
+    }
+
+    .custom-modal-body {
+        padding: 0 !important;
+        transition: 300ms all;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        color:$c5 !important;
+        .custom-modal-title-container {
+            width: calc(100% - 3rem);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-start;
+            h4{
+                font-size :20px;
+                line-height: 1.3;
+                color: $c2;
+            }
+            p{
+                line-height: 1.3;
+                margin-top: 0.55rem;
+            }
+        }
+    }
+
+}

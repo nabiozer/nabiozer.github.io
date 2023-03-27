@@ -1,0 +1,22 @@
+.page-loading {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1500;
+    position:fixed;
+    align-items: center;
+    touch-action: none;
+    justify-content: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+    flex-direction: column;
+    i {
+        color:white;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+}

@@ -1,0 +1,107 @@
+@mixin button-size-style($background: $c1, $color:#ffffff) {
+
+    background: $background !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    outline: none !important;
+    line-height: 1.2 !important;
+    padding: 0 1rem !important;
+    border: none !important;
+    &.small {
+        height:2rem;
+        font-size: 0.75rem !important;
+    }
+    &.xsmall {
+        height:1.5rem;
+        font-size: 0.75rem !important;
+    }
+    &.medium {
+        height:2.4rem;
+        font-size: 0.75rem !important;
+    }
+
+    &.large {
+        height:3rem;
+        font-size: 0.75rem !important;
+    }
+    &.xlarge {
+        height:4rem;
+        font-size: 0.75rem !important;
+    }
+    .MuiButton-label {
+        line-height: 1;
+        i {
+            margin: 0 0.2rem;
+            font-size: 0.9rem;
+        }
+    }
+    span {
+        > .MuiCircularProgress-colorPrimary {
+            color: $background !important;
+        }
+    }
+
+    &.outlined {
+        background: transparent !important;
+        border: 1px solid white !important;
+        color: $background !important;
+        span {
+            > .MuiCircularProgress-colorPrimary {
+                color: $background !important;
+            }
+        }
+
+        &:hover {
+            background: $background !important;
+            color: $color !important;
+            span {
+                > .MuiCircularProgress-colorPrimary {
+                    color: $color !important;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        background: darken($background, 10%) !important
+    }
+    &.radius-lg {
+        border-radius:2rem;
+    }
+    &:disabled {
+        background: lighten($background, 10%) !important;
+        opacity: 0.5;
+    }
+}
+
+.custom-outlined-button {
+    outline: none;
+
+    &.default {
+        @include button-size-style($c1, #fff);
+    }
+    &.second {
+        @include button-size-style($c2, #fff);
+    }
+    &.danger {
+        @include button-size-style($c4, #fff);
+    }
+    &.info {
+        @include button-size-style($c4, #fff);
+    }
+    &.warning {
+        @include button-size-style($c4, #fff);
+    }
+    &.success {
+        @include button-size-style($c4, #fff);
+    }
+    .MuiButton-label {
+        line-height: 1;
+        display:inherit;
+        align-items:inherit;
+        justify-content:inherit;
+    }
+
+}

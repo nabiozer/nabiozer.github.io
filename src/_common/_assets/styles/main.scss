@@ -1,0 +1,58 @@
+//variable
+@import 'var';
+@import 'global';
+@import 'reset';
+@import 'common';
+
+//components
+
+@import 'components/loader';
+@import 'components/navbar';
+@import 'components/informationCard';
+@import 'components/button';
+@import 'components/cardContainer';
+@import 'components/projectinfo';
+@import 'components/exploreCard';
+@import 'components/empty';
+@import 'components/loadingModal';
+@import 'components/modal';
+
+
+@import 'components/input';
+@import 'components/box';
+@import 'components/grid';
+@import 'components/footer';
+@import 'components/dropDown';
+@import 'components/background';
+@import 'components/animatedText';
+@import '../../../_components/Display/Notification/style.scss';
+//Google Font 
+
+//pages 
+@import 'pages/skills/skillbar';
+@import 'pages/skills';
+@import 'pages/contact';
+@import 'pages/portfolio';
+@import 'pages/login';
+
+//Bootstrap 
+
+@import '~bootstrap/scss/bootstrap';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: $c5;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background:$c1;
+}

@@ -1,0 +1,14 @@
+.custom-outlined-checkbox {
+    margin: 0 !important;
+    outline:none !important;
+    .MuiCheckbox-root {
+        padding:0 !important;
+        color: $c3 !important;
+        border-width: 1px;
+    }
+    .MuiFormControlLabel-label {
+        color: $c3 !important;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+}
